@@ -1,5 +1,17 @@
 #!/bin/bash
 
+if [[ "$#" == "1" && "$1" == "-h" ]]; then
+	echo "Usage: ./installer.sh BOT_TOKEN CHAT_ID"
+	exit 1
+fi
+
+if [[ "$#" != "2" ]]; then
+	echo "Invalid number of arguments"
+	echo "Usage: ./installer.sh BOT_TOKEN CHAT_ID"
+	exit 1
+fi
+
+
 cp SSTelMes.service /etc/systemd/system
 chmod 777 /etc/systemd/system/SSTelMes.service
 
