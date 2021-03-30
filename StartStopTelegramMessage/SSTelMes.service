@@ -1,0 +1,11 @@
+[Unit]
+Description=Sends a message via Telegram using a bot when system start/shutdown
+Before=shutdown.target halt.target poweroff.target reboot.target
+
+[Service]
+ExecStart=/usr/bin/SSTelMes.sh start
+ExecStop=/usr/bin/SSTelMes.sh stop
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
