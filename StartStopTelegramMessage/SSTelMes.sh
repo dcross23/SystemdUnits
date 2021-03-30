@@ -4,7 +4,7 @@ BOT_TOKEN=xxxxxxxxxx:zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 MY_CHAT_ID=yyyyyyyyyy
 
 case "$1" in
-	start)		<F5>
+	start)
 		TEXT="System has booted: `date +%d/%m/%Y\ %R`"
 	 ;;
  	stop)
