@@ -16,4 +16,5 @@ Run "installer.sh" to automatically install and run the service.
 - Run "./installer.sh -h"
 - Create telegram bot: https://core.telegram.org/bots
 - Get chat id: https://sean-bradley.medium.com/get-telegram-chat-id-80b575520659
+- It is recommended to restart the system after installing the service, although its not fully necessary 
 
