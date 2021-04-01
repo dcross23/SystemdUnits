@@ -1,13 +1,13 @@
 #!/bin/bash
 
 if [[ "$#" == "1" && "$1" == "-h" ]]; then
-	echo "Usage: ./installer.sh BOT_TOKEN CHAT_ID"
+	echo "Uso: ./installer.sh BOT_TOKEN CHAT_ID"
 	exit 1
 fi
 
 if [[ "$#" != "2" ]]; then
 	echo "Numero invalido de argumentos"
-	echo "Usage: ./installer.sh BOT_TOKEN CHAT_ID"
+	echo "Uso: ./installer.sh BOT_TOKEN CHAT_ID"
 	exit 1
 fi
 
