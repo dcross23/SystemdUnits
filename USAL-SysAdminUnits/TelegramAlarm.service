@@ -1,0 +1,7 @@
+[Unit]
+Description=Servicio que se ejecutará con el timer a las 20:00
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /usr/bin/TelegramAlarm.sh
+Restart=on-failure

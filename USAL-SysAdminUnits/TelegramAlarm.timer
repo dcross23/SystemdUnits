@@ -1,0 +1,13 @@
+[Unit]
+Description=Timer que arranca un servicio a las 20:00
+After=getty.target
+
+[Timer]
+Unit=TelegramAlarm.service
+OnCalendar=20:00:00
+
+[Install]
+WantedBy=timers.target
+
+
+
